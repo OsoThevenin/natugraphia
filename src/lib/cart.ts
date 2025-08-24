@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { safeJsonParse } from "@/lib/utils";
 
-export const CART_COOKIE = "yns_cart";
+export const CART_COOKIE = "natugraphia_cart";
 
 export type CartCookieJson = { id: string; linesCount: number };
 

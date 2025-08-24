@@ -3,6 +3,7 @@ import HivernImage from "@/images/hivern.webp";
 
 export const config = {
 	categories: [
+		{ name: "Apparel", slug: "apparel", image: EstiuImage },
 		{ name: "Hivern", slug: "hivern", image: HivernImage },
 		{ name: "Estiu", slug: "estiu", image: EstiuImage },
 	],
