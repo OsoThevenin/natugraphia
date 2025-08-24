@@ -2,13 +2,13 @@ import { IntlMessageFormat } from "intl-messageformat";
 import { env } from "@/env.mjs";
 import type { IntlNamespaceKeys, NamespacedKeys } from "./types";
 
-type En = typeof import("../../messages/en-US.json");
+type Ca = typeof import("../../messages/ca-ES.json");
 
 export const getLocale = async () => env.NEXT_PUBLIC_LANGUAGE;
 export const getMessages = async () =>
 	(
 		(await import(`../../messages/${await getLocale()}.json`)) as {
-			default: En;
+			default: Ca;
 		}
 	).default;
 
