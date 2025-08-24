@@ -1,15 +1,14 @@
-import AccessoriesImage from "@/images/accessories.jpg";
-import ApparelImage from "@/images/apparel.jpg";
+import EstiuImage from "@/images/estiu.webp";
+import HivernImage from "@/images/hivern.webp";
 
 export const config = {
 	categories: [
-		{ name: "Apparel", slug: "apparel", image: ApparelImage },
-		{ name: "Accessories", slug: "accessories", image: AccessoriesImage },
+		{ name: "Hivern", slug: "hivern", image: HivernImage },
+		{ name: "Estiu", slug: "estiu", image: EstiuImage },
 	],
 
 	social: {
-		x: "https://x.com/yourstore",
-		facebook: "https://facebook.com/yourstore",
+		instagram: "https://instagram.com/natugraphia_grau",
 	},
 
 	contact: {
