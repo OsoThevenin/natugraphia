@@ -85,20 +85,21 @@ export async function Footer() {
 			</div>
 			<div className="container mt-12 max-w-7xl text-sm text-neutral-500 flex items-center justify-between gap-4">
 				<div className="flex-1">
-					<p>© 2025 Natugraphia - Grau Casanovas Niubó</p>
+					<p>{t("copyright")}</p>
 				</div>
 				<div className="flex items-center justify-center gap-4">
 					<YnsLink
 						className="inline-flex items-center gap-1 transition-colors hover:text-neutral-700"
 						href="https://github.com/OsoThevenin/natugraphia"
 					>
-						<GithubIcon className="h-4 w-4" /> Created by <span className="font-semibold">Pere Bruy</span>
+						<GithubIcon className="h-4 w-4" /> {t("createdBy")}{" "}
+						<span className="font-semibold">Pere Bruy</span>
 						<span className="sr-only">Github</span>
 					</YnsLink>
 					<span aria-hidden="true">|</span>
 					<p>
-						Based on <Link href="https://github.com/yournextstore/yournextstore">Your Next Store</Link>{" "}
-						(AGPL-3.0)
+						{t("basedOn")} <Link href="https://github.com/yournextstore/yournextstore">Your Next Store</Link>{" "}
+						{t("license")}
 					</p>
 				</div>
 			</div>
