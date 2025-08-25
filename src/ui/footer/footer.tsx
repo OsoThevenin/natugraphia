@@ -97,7 +97,8 @@ export async function Footer() {
 					</YnsLink>
 					<span aria-hidden="true">|</span>
 					<p>
-						Forked from <Link href="https://github.com/yournextstore/yournextstore">Your Next Store</Link>
+						Based on <Link href="https://github.com/yournextstore/yournextstore">Your Next Store</Link>{" "}
+						(AGPL-3.0)
 					</p>
 				</div>
 			</div>
