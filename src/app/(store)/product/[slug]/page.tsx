@@ -234,10 +234,12 @@ async function SimilarProducts({ id }: { id: string }) {
 		return null;
 	}
 
+	const t = await getTranslations("/product.page");
+
 	return (
 		<section className="py-12">
 			<div className="mb-8">
-				<h2 className="text-2xl font-bold tracking-tight">You May Also Like</h2>
+				<h2 className="text-2xl font-bold tracking-tight">{t("youMayAlsoLikeTitle")}</h2>
 			</div>
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 				{products.map((product) => {
