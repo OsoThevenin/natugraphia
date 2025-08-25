@@ -31,13 +31,13 @@ export default async function Home() {
 						</YnsLink>
 					</div>
 					<Image
-						alt="Cup of Coffee"
+						alt="Dos senglars mirant directe a la càmera amb un fons de neu"
 						loading="eager"
 						priority={true}
 						className="rounded"
 						height={450}
 						width={450}
-						src="https://files.stripe.com/links/MDB8YWNjdF8xT3BaeG5GSmNWbVh6bURsfGZsX3Rlc3RfaDVvWXowdU9ZbWlobUIyaHpNc1hCeDM200NBzvUjqP"
+						src="/natugraphia_hero.webp"
 						style={{
 							objectFit: "cover",
 						}}

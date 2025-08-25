@@ -1,4 +1,5 @@
 import { UserIcon } from "lucide-react";
+import Image from "next/image";
 import { CartSummaryNav } from "@/ui/nav/cart-summary-nav";
 import { NavMenu } from "@/ui/nav/nav-menu";
 import { SearchNav } from "@/ui/nav/search-nav";
@@ -9,7 +10,8 @@ export const Nav = async () => {
 	return (
 		<header className="z-50 py-4 sticky top-0 bg-white/90 backdrop-blur-xs nav-border-reveal">
 			<div className="mx-auto flex max-w-7xl items-center gap-2 px-4 flex-row sm:px-6 lg:px-8">
-				<YnsLink href="/">
+				<YnsLink href="/" className="flex items-center gap-2">
+					<Image src="/logo.jpg" alt="LogoNatugraphia" width={50} height={50} />
 					<SeoH1 className="-mt-0.5 whitespace-nowrap text-xl font-bold">Natugraphia</SeoH1>
 				</YnsLink>
 
@@ -20,9 +22,9 @@ export const Nav = async () => {
 					<SearchNav />
 				</div>
 				<CartSummaryNav />
-				<YnsLink href="/login">
+				{/* <YnsLink href="/login">
 					<UserIcon className="hover:text-neutral-500" />
-				</YnsLink>
+				</YnsLink> */}
 			</div>
 		</header>
 	);
