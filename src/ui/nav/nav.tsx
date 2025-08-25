@@ -1,4 +1,3 @@
-import { UserIcon } from "lucide-react";
 import Image from "next/image";
 import { CartSummaryNav } from "@/ui/nav/cart-summary-nav";
 import { NavMenu } from "@/ui/nav/nav-menu";
