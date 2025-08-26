@@ -13,3 +13,5 @@ export type IntlNamespaceKeys = AllKeysOrNamespaces<IntlMessages>;
 export type NamespacedKeys<TObject extends object, TNamespace extends string> = {
 	[K in keyof TObject]: K extends `${TNamespace}${Separator}${infer Tail}` ? Tail : never;
 }[keyof TObject];
+
+export const AVAILABLE_LOCALES = ["ca-ES", "en-US", "es-ES"] as const;

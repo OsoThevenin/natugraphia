@@ -1,11 +1,14 @@
 import Image from "next/image";
+import { getLocale } from "@/i18n/server";
 import { CartSummaryNav } from "@/ui/nav/cart-summary-nav";
+import { LocaleSwitcher } from "@/ui/nav/locale-switcher.client";
 import { NavMenu } from "@/ui/nav/nav-menu";
 import { SearchNav } from "@/ui/nav/search-nav";
 import { SeoH1 } from "@/ui/seo-h1";
 import { YnsLink } from "@/ui/yns-link";
 
 export const Nav = async () => {
+	const locale = await getLocale();
 	return (
 		<header className="z-50 py-4 sticky top-0 bg-white/90 backdrop-blur-xs nav-border-reveal">
 			<div className="mx-auto flex max-w-7xl items-center gap-2 px-4 flex-row sm:px-6 lg:px-8">
@@ -20,6 +23,7 @@ export const Nav = async () => {
 				<div className="mr-3 ml-auto sm:ml-0">
 					<SearchNav />
 				</div>
+				<LocaleSwitcher current={locale} />
 				<CartSummaryNav />
 				{/* <YnsLink href="/login">
 					<UserIcon className="hover:text-neutral-500" />

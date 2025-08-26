@@ -262,5 +262,8 @@
 	"/order.paymentStatus.requires_capture": "Requereix Captura",
 	"/order.paymentStatus.requires_confirmation": "Requereix Confirmació",
 	"/order.paymentStatus.requires_payment_method": "Requereix Mètode de Pagament",
-	"/order.paymentStatus.succeeded": "Completada"
+	"/order.paymentStatus.succeeded": "Completada",
+	"Global.languages.ca-ES": "Català",
+	"Global.languages.en-US": "English",
+	"Global.languages.es-ES": "Castellano"
 }

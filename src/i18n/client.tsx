@@ -2,7 +2,7 @@
 
 import { createContext, type ReactNode, use } from "react";
 import { invariant } from "@/lib/utils";
-import { getMessagesInternal } from "./server";
+import { formatMessage } from "./core";
 import type { IntlNamespaceKeys } from "./types";
 
 type IntlClientProviderValue = { messages: IntlMessages; locale: string };
@@ -25,5 +25,5 @@ export const useTranslations = <TNamespaceKey extends IntlNamespaceKeys = never>
 ) => {
 	const ctx = use(IntlClientContext);
 	invariant(ctx, "useTranslations must be used within a IntlClientProvider");
-	return getMessagesInternal(namespaceKey, ctx.locale, ctx.messages);
+	return formatMessage(namespaceKey, ctx.locale, ctx.messages);
 };
