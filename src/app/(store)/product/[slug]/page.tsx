@@ -248,16 +248,18 @@ async function SimilarProducts({ id }: { id: string }) {
 						<div key={product.tracking_id} className="bg-card rounded overflow-hidden shadow-sm group">
 							{trieveMetadata.image_url && (
 								<YnsLink href={`${publicUrl}${product.link}`} className="block" prefetch={false}>
-									<Image
-										className={
-											"w-full rounded-lg bg-neutral-100 object-cover object-center group-hover:opacity-80 transition-opacity"
-										}
-										src={trieveMetadata.image_url}
-										width={300}
-										height={300}
-										sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 300px"
-										alt=""
-									/>
+									<div className="aspect-square w-full overflow-hidden rounded-lg bg-neutral-100">
+										<Image
+											className={
+												"h-full w-full object-cover object-center group-hover:opacity-80 transition-opacity"
+											}
+											src={trieveMetadata.image_url}
+											width={300}
+											height={300}
+											sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 300px"
+											alt=""
+										/>
+									</div>
 								</YnsLink>
 							)}
 							<div className="p-4">
